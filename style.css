@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:wght@400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 
 body{
     background: #241a68;
+    font-family: 'Raleway', sans-serif;
 }
 
 .wrapper{
@@ -15,4 +18,54 @@ body{
     right: 5rem;
     text-align: center;
     color: #fff;
+    max-width: 600px;
+}
+
+.text-dotted{
+    font-family: 'Raleway Dots', sans-serif;
+}
+
+.main-heading{
+    font-size: 5vw;
+    text-shadow: 0 0 10px #000;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: 0.6s;
+    transition-delay: 0.2s;
+}
+
+.main-para{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: 0.8s;
+}
+
+.loaded .main-heading, .loaded .main-para {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 992px){
+    .wrapper{
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 767px){
+    .wrapper{
+        max-width: 500px;
+        transform: translate(50%, -50%);
+        right: 50%;
+    }
+    .main-heading{
+        font-size: 2rem;
+    }
+    .main-para{
+        font-size: 1.25rem;
+    }
 }
