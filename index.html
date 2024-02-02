@@ -17,9 +17,9 @@
 
 
   <css-doodle>
-    @grid: 55x55 / 320px;
+    @grid: 60x60;
     --alpha: calc(
-      @abs(@abs(@row - 3) + @abs(@col - 3) - 5) / 5
+      @abs(@abs(@row - 30) + @abs(@col - 30) - 60) / 100
     );
     
     :container{
@@ -29,14 +29,14 @@
     }
     :doodle {
     grid-gap: 5px;
-    width: 80vh;
+    width: 90vh;
     height: 70vh;
     position: absolute;
     top:40%;
     left:40%;
     transform: translate(-50%,-50%);
     }
-    background: #ffffff6e;
+    background: rgba(255, 255, 255, var(--alpha));
     
     border-radius: 50%;
 
