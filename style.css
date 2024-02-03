@@ -9,6 +9,7 @@
 body{
     background: #241a68;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 .wrapper{
@@ -60,12 +61,10 @@ body{
 
 @media (max-width: 767px){
     .wrapper{
-        
-        transform: translate(50%, -50%);
-        right: 50%;
+        max-width: 90vw;
     }
     .main-heading{
-        font-size: 2rem;
+        font-size: 10vw;
     }
     .main-para{
         font-size: 1.25rem;
