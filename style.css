@@ -18,7 +18,7 @@ body{
     left: 50%;
     text-align: center;
     color: #fff;
-    max-width: 600px;
+    max-width: 300px;
 }
 
 .text-dotted{
@@ -28,8 +28,9 @@ body{
 .main-heading{
     font-size: 5vw;
     text-shadow: 0 0 10px #000;
-    font-weight: 500;
+    font-weight: 900;
     opacity: 0;
+    text-transform: uppercase;
     transform: translateY(-100px);
     transition: 0.6s;
     transition-delay: 0.2s;
@@ -51,14 +52,14 @@ body{
 
 @media (max-width: 992px){
     .wrapper{
-        max-width: 500px;
+        /* max-width: 500px; */
     }
 }
 
 
 @media (max-width: 767px){
     .wrapper{
-        max-width: 500px;
+        
         transform: translate(50%, -50%);
         right: 50%;
     }
