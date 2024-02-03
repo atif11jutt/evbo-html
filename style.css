@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&family=Raleway:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap');
 
 *{
     margin: 0;
@@ -8,7 +8,7 @@
 
 body{
     background: #241a68;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .wrapper{
@@ -18,7 +18,7 @@ body{
     left: 50%;
     text-align: center;
     color: #fff;
-    max-width: 300px;
+    max-width: 80vw;
 }
 
 .text-dotted{
@@ -26,9 +26,10 @@ body{
 }
 
 .main-heading{
-    font-size: 5vw;
+    font-size: 8vw;
+    line-height: 1.2;
     text-shadow: 0 0 10px #000;
-    font-weight: 900;
+    font-weight: 700;
     opacity: 0;
     text-transform: uppercase;
     transform: translateY(-100px);
