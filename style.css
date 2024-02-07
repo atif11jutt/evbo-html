@@ -19,7 +19,7 @@ body{
     left: 50%;
     text-align: center;
     color: #fff;
-    max-width: 80vw;
+    max-width: 30rem;
 }
 
 .text-dotted{
@@ -27,7 +27,7 @@ body{
 }
 
 .main-heading{
-    font-size: 8vw;
+    font-size: 5rem;
     line-height: 1.2;
     text-shadow: 0 0 10px #000;
     font-weight: 700;
@@ -64,9 +64,23 @@ body{
         max-width: 90vw;
     }
     .main-heading{
-        font-size: 10vw;
+        font-size: 4rem;
     }
     .main-para{
         font-size: 1.25rem;
     }
 }
+
+
+
+@media only screen and (max-width: 600px) {
+    .doodle {
+        grid-gap: 5px;
+        width: 80vh;
+        height: 80vh;
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        }
+  }
